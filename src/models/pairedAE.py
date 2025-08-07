@@ -1,4 +1,3 @@
-# src/holo2bf/models/paired_ae.py
 import torch
 from torch import nn
 
