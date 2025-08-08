@@ -1,8 +1,8 @@
 import torch
 from torch import nn
 
-class PairedAutoencoder(nn.Module):
-    """Paired AE: encodes & decodes, returning both reconstruction & bottleneck."""
+class AE(nn.Module):
+    """Autoencoder: encodes & decodes, returning both reconstruction & bottleneck."""
     def __init__(self, in_ch: int, out_ch: int, features: list[int] = [16,32,64,128]) -> None:
         super().__init__()
         # build encoder
